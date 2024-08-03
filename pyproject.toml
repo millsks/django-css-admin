@@ -1,0 +1,57 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-css-admin"
+version = "2024.08"
+description = "A Django application that assists site administrators in customizing visual styles used when rendering pages"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "Apache 2.0"}
+authors = [
+    {name = "Kevin Mills", email = "millsks@gmail.com"}
+]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+
+[project.urls]
+Homepage = "https://github.com/millsks/django-css-admin"
+
+[project.dependencies]
+django = ">=4.2,<5.0"
+
+[project.optional-dependencies]
+dev = [
+    "cookiecutter",
+    "cruft",
+    "django-debug-toolbar >=4.4.2",
+    "mypy",
+    "pre-commit",
+    "pre-commit-hooks",
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+    "pytest-django",
+    "pytest-env",
+    "pytest-html",
+    "pytest-mock",
+    "pytest-pythonpath",
+    "pytest-timeout",
+    "pytest-watch",
+    "pytest-xdist",
+    "ruff",
+]
+
